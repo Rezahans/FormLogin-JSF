@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>HanHans Official</title>
+        <style>
+            body{
+                width: 500px;
+                margin: 250px;
+                margin-top: 250px;
+		box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0,.03);
+                transition: all .3s;
+                border: solid 250px #b9e311;
+                border-top-right-radius: 250px;
+                border-bottom-left-radius: 250px;
+                text-align: center;
+            }
+
+            input_text
+            {
+                width: 80%;
+                padding : 10px 10px;
+                margin : 5px 0 ;
+                display : inline-block;
+                border: 1px solid #ccc;
+                               
+            }
+            model-content{
+                background-color: #fefefe;
+                margin: 5% auto 15%;
+                border: 1px solid #888;
+                width: 50%;
+                text-align: center;
+            } 
+            .txt_color{
+                color :red;
+                
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form class="model-content">
+            <h2>Login Failed</h2>
+            <h:outputText value="404 NOT FOUND" style="background-color: red;"/> <br></br>
+            <h:outputText value="#{value_login.email}"/><br></br>
+            <h:commandLink value="Silahkkan Login Kembali" action="index.xhtml"/>
+            <h4 class="txt_color">WHOOPS !!! LOGIN ANDA GAGAL</h4>
+            
+        </h:form>
+    </h:body>
+</html>
+
